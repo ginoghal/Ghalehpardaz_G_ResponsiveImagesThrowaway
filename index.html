@@ -3,16 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Responsive Images</title>
-    <meta name="viewport" content="width:device-width,
-    initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <main>
       <div>
-        <img src="" alt="">
-
+        <picture>
+          <source srcset="images/hubble-small_web.jpg" media="(max-width:300px)">
+          <source srcset="images/hubble-mid_web.jpg" media="(max-width: 660px)">
+          <source srcset="images/hubble-large_web.jpg" media="(min-width: 661px)">
+      <!--Always include a default image for browsers that dont support a picture
+      tag, and also if a media query doesnt match -->
+      <img src="images/hubble-small_web.jpg" alt="hubble image">
+        </picture>
       </div>
     </main>
 

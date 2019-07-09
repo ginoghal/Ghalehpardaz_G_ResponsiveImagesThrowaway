@@ -1,0 +1,5 @@
+/*img {width: 100%}*/  /* Dont ever do this makes your image look like crap!*/
+
+/* Make sure the image cant scale past its natural dimensions */
+
+img, embed, object, video {max-width: 100%; }
